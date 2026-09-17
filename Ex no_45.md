@@ -1,25 +1,41 @@
+
 # EX 45 C program that implements a queue using an array, and performs insertion (enqueue) and display operations.
 ## DATE:
 ## AIM:
 To write a C program that implements a queue using an array, and performs insertion (enqueue) and display operations. 
 
-## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+## Algorithm:
+1. Start. 
+2. Define a variables. 
+3. Write a functions to traverse the linked list and display it in the following format. 
+4. Read the value using scanf. 
+5. Ask the user to make an input. 
+6. Print out the answer. 
+7. End
 
 ## Program:
-```
-/*
-C program that implements a queue using an array, and performs insertion (enqueue) and display operations.
-Developed by: 
-RegisterNumber:  
-*/
+```c program
+struct Node{ 
+char data; 
+struct Node *next; 
+}*head; 
+ 
+ 
+void display() 
+{ 
+struct Node *temp; 
+temp=head; 
+while(temp!=NULL) 
+{ 
+printf("%c\n",temp->data); 
+temp=temp->next; 
+} 
+ 
+} 
 ```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/b402ce73-b0c8-4b2c-9fe0-ddd383f0a3bb)
 
 
 
