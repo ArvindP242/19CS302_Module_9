@@ -14,27 +14,34 @@ To Write a function to display queue elements using array.
 
 ## Program:
 ```
-float queue[50]; 
-int rear=-1,front=-1,i; 
-void display() 
-{ 
-if(front==-1||front>rear) 
-printf("No elements to display\n"); 
-else 
-{ 
-for(i=front;i<=rear;i++) 
-printf("%.1f\n",queue[i]); 
-} 
- 
-} 
-void display() 
-{ 
-if(front==-1||front>rear) 
-{  
-printf("No elements to display\n"); 
-else 
-{ 
-for(i=front;i<=rear;i++)
+#include <stdio.h>
+int main(){
+char queue[MAX];
+int front = -1;
+int rear = -1;
+
+void enqueue(char val) {
+    if (rear == MAX - 1) {
+        printf("Queue is full\n");
+        return;
+    }
+    if (front == -1) {
+        front = 0;
+    }
+    rear++;
+    queue[rear] = val;
+}
+
+void display() {
+    if (front == -1 || front > rear) {
+        printf("no elements to display\n");
+    } else {
+        for (int i = front; i <= rear; i++) {
+            printf("%c ", queue[i]);
+        }
+        printf("\n");
+    }
+}
 ```
 
 ## Output:
