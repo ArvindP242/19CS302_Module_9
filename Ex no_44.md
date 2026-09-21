@@ -14,6 +14,8 @@ To write a C Write a functions to perform enqueue, dequeue, display, peek in Que
 
 ## Program:
 ```c program
+#include<stdio.h>
+int main(){
 char queue[50]; 
 int size=10,front,rear,i; 
 void enqueue(char data) 
