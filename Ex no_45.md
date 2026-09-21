@@ -15,6 +15,8 @@ To write a C program that implements a queue using an array, and performs insert
 
 ## Program:
 ```c program
+#include<stdio.h>
+int main(){
 struct Node{ 
 char data; 
 struct Node *next; 
