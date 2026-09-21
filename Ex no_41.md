@@ -14,11 +14,33 @@ To write a function to find the peek of stack using array.
 ## Program:
 ```
 
-int stack[100],top; 
-void peek() 
-{ 
-printf("%d",stack[top]); 
-} 
+#include <stdio.h>
+
+float stack[100];
+int top = -1;
+
+void push(float x)
+{
+    stack[++top] = x;
+}
+
+void peek()
+{
+    printf("%.2f", stack[top]);
+}
+
+int main()
+{
+    top = -1;
+
+    push(10.55);
+    push(20.55);
+    push(30.55);
+
+    peek();
+
+    return 0;
+}
 ```
 
 ## Output:
