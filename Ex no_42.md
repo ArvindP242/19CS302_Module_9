@@ -47,7 +47,9 @@ top=top-1;
 void peek() 
 { 
 printf("%d ",stack[top]); 
-} 
+}
+return 0;
+}
 ```
 
 ## Output:
